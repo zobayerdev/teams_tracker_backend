@@ -1,15 +1,15 @@
 <?php
-// $host = 'localhost';
-// $db   = 'zobayer_location';
-// $user = 'zobayer_location';
-// $pass = 'zobayer_location';
-// $charset = 'utf8mb4';
-
 $host = 'localhost';
-$db = 'team_track'; // phpMyAdmin-এ এই নামেই ডাটাবেস তৈরি করবেন
-$user = 'root';             // XAMPP-এর ডিফল্ট ইউজারনেম সবসময় 'root' হয়
-$pass = '';                 // XAMPP-এর ডিফল্ট পাসওয়ার্ড ফাঁকা (empty) থাকে
+$db = 'zobayer_location';
+$user = 'zobayer_location';
+$pass = 'zobayer_location';
 $charset = 'utf8mb4';
+
+// $host = 'localhost';
+// $db = 'team_track'; // phpMyAdmin-এ এই নামেই ডাটাবেস তৈরি করবেন
+// $user = 'root';             // XAMPP-এর ডিফল্ট ইউজারনেম সবসময় 'root' হয়
+// $pass = '';                 // XAMPP-এর ডিফল্ট পাসওয়ার্ড ফাঁকা (empty) থাকে
+// $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
