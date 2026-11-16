@@ -3,7 +3,7 @@ name: Deploy PHP Admin Panel via FTP
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   web-deploy:
@@ -18,7 +18,7 @@ jobs:
         with:
           server: 160.25.5.233
           username: location@zobayer.xyz
-          password: 'D(^Ka8P3B*f7C3zU'
+          password: "D(^Ka8P3B*f7C3zU"
           server-dir: ./
           exclude: |
             **/.git*
