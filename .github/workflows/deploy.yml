@@ -18,7 +18,7 @@ jobs:
         with:
           server: 160.25.5.233
           username: location
-          password: "D(^Ka8P3B*f7C3zU"
+          password: 'D(^Ka8P3B*f7C3zU'
           server-dir: ./
           exclude: |
             **/.git*
