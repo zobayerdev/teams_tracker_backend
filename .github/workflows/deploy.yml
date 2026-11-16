@@ -16,10 +16,9 @@ jobs:
       - name: Sync files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 160.25.5.233
-          username: location@zobayer.xyz
-          password: "D(^Ka8P3B*f7C3zU"
-          protocol: ftps
+          server: ftp.zobayer.xyz
+          username: location@location.zobayer.xyz
+          password: 'D(^Ka8P3B*f7C3zU'
           server-dir: ./
           exclude: |
             **/.git*
