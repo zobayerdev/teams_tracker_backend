@@ -1,0 +1,27 @@
+name: Deploy PHP Admin Panel via FTP
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  web-deploy:
+    name: Deploy to Shared Hosting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Latest Code
+        uses: actions/checkout@v4
+
+      - name: Sync files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 160.25.5.233
+          username: location
+          password: "D(^Ka8P3B*f7C3zU"
+          server-dir: /public_html/
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/config/database.php
+            **/*.sql
